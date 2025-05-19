@@ -1,4 +1,7 @@
-﻿namespace ElectricalBikeProject;
+﻿using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
+
+namespace ElectricalBikeProject;
 
 public static class Log4NetServiceCollectionExtension
 {

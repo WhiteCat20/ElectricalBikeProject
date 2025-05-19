@@ -1,5 +1,12 @@
+using System.IO;
 using System.Reflection;
 using ElectricalBikeProject;
+using ElectricalBikeProject.Infrastructure;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,11 +18,12 @@ var loggerFactory = Log4NetServiceCollectionExtension.CreateLoggerFactory(Path.C
 builder.Services.AddLog4Net(loggerFactory);
 ILogger logger = new Logger<WebApplication>(loggerFactory);
 
+var connectionString = builder.Configuration.GetConnectionString("ProcessingSwConnectionString");
+
 logger.LogInformation("Starting the Processing SW");
 
 // Add services to the container.
-
-
+builder.Services.AddInfra(connectionString!);
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -29,7 +37,6 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
-
+app.MapControllers();
 
 app.Run();

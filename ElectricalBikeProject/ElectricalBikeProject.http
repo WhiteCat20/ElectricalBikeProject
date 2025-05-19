@@ -1,6 +1,0 @@
-@ElectricalBikeProject_HostAddress = http://localhost:5278
-
-GET {{ElectricalBikeProject_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
