@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElectricalBikeProject.UnitT
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElectricalBikeProject.SharedKernel", "ElectricalBikeProject.SharedKernel\ElectricalBikeProject.SharedKernel.csproj", "{A0A574E9-35CF-4D17-A3AE-D8077FC9EEFF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElectricalBikeProject.RabbitMq", "ElectricalBikeProject.RabbitMq\ElectricalBikeProject.RabbitMq.csproj", "{90879C99-8C11-4F06-847B-B67B55D0131F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +38,9 @@ Global
 		{A0A574E9-35CF-4D17-A3AE-D8077FC9EEFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A0A574E9-35CF-4D17-A3AE-D8077FC9EEFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A0A574E9-35CF-4D17-A3AE-D8077FC9EEFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90879C99-8C11-4F06-847B-B67B55D0131F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90879C99-8C11-4F06-847B-B67B55D0131F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90879C99-8C11-4F06-847B-B67B55D0131F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90879C99-8C11-4F06-847B-B67B55D0131F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
